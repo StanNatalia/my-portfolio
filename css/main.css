@@ -1,0 +1,207 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+}
+
+/* Header */
+
+.header {
+  background-color: #f1f1f1;
+  padding-top: 46px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 76px;
+}
+
+.logo {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  line-height: 1;
+  padding: 0 12px 3px 0;
+}
+
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: #fda300;
+  border-radius: 50%;
+}
+
+.nav-button {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link.active {
+  color: #606060;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header-headling {
+  font-weight: 600;
+  font-size: 44px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.header-content {
+  max-width: 500px;
+  margin-top: 124px;
+}
+
+/* Service */
+
+.service {
+  padding: 90px 0;
+}
+.service-row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 60px;
+  padding: 90px 0;
+}
+.service-card {
+  width: 370px;
+  min-width: 315px;
+  flex: 1 1 0;
+}
+.service-img {
+  margin-bottom: 30px;
+}
+.service-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.service-info {
+  font-weight: 400;
+  line-height: 200%;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.project-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+}
+
+.portfolio-title {
+  font-weight: 600;
+  font-size: 34px;
+  color: #070707;
+  margin-bottom: 70px;
+}
+
+.portfolio-name {
+  margin-top: 40px;
+  font-size: 18px;
+  text-decoration-skip-ink: none;
+  color: #070707;
+}
+
+.portfolio-name a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0;
+  text-align: center;
+}
+.contacts {
+  font-weight: 600;
+  font-size: 34px;
+  color: #070707;
+  margin-bottom: 40px;
+}
+.contacts-content {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #070707;
+}
+.btn {
+  padding: 8px 23px;
+  font-size: 18px;
+  background-color: #000;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #5b5b5b;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+  background-color: #000;
+}
+.contacts-social {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer-text {
+  color: #828282;
+}
